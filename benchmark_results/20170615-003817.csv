@@ -1,0 +1,3 @@
+time(sec), throughput(txs), avg_latency(ms), min(ms), max(ms), 25th_lat(ms), median_lat(ms), 75th_lat(ms)
+0,37,10.567567567567568,3,103,6,6,11
+3,8,21.875,6,83,7,10,25

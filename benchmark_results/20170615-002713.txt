@@ -1,0 +1,34 @@
+# of txns during benchmark period: 30
+MICRO: 9 ms
+MICRO: 6 ms
+MICRO: 6 ms
+MICRO: 3 ms
+MICRO: 5 ms
+MICRO: 6 ms
+MICRO: 8 ms
+MICRO: 21 ms
+MICRO: 6 ms
+MICRO: 32 ms
+MICRO: 9 ms
+MICRO: 5 ms
+MICRO: 4 ms
+MICRO: 4 ms
+MICRO: 8 ms
+MICRO: 5 ms
+MICRO: 4 ms
+MICRO: 10 ms
+MICRO: 4 ms
+MICRO: 6 ms
+MICRO: 6 ms
+MICRO: 3 ms
+MICRO: 7 ms
+MICRO: 32 ms
+MICRO: 13 ms
+MICRO: 11 ms
+MICRO: 69 ms
+MICRO: 58 ms
+MICRO: 60 ms
+MICRO: 39 ms
+
+MICRO 30 avg latency: 15 ms
+TOTAL 30 avg latency: 16 ms

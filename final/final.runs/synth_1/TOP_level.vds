@@ -1,0 +1,601 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Jan 12 09:19:44 2018
+# Process ID: 2620
+# Current directory: C:/Users/ycw/final/final.runs/synth_1
+# Command line: vivado.exe -log TOP_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_level.tcl
+# Log file: C:/Users/ycw/final/final.runs/synth_1/TOP_level.vds
+# Journal file: C:/Users/ycw/final/final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_level.tcl -notrace
+Command: synth_design -top TOP_level -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5772 
+WARNING: [Synth 8-2507] parameter declaration becomes local in CreateLargePulse with formal parameter declaration list [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in CreateLargePulse with formal parameter declaration list [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:35]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 327.633 ; gain = 82.680
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP_level' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/TOP_level.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/clock_divisor.v:1]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/clock_divisor.v:1]
+INFO: [Synth 8-638] synthesizing module 'SampleDisplay' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/SampleDisplay.v:1]
+	Parameter LEFT_SHIFT_CODES bound to: 9'b000010010 
+	Parameter RIGHT_SHIFT_CODES bound to: 9'b001011001 
+	Parameter KEY_CODES bound to: 180'b001000101000010110000011110000100110000100101000101110000110110000111101000111110001000110000011011001011010000101001001110110001101011001110011001110100001101100001110101001111101 
+INFO: [Synth 8-638] synthesizing module 'KeyboardDecoder' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/KeyboardDecoder.v:1]
+	Parameter INIT bound to: 2'b00 
+	Parameter WAIT_FOR_SIGNAL bound to: 2'b01 
+	Parameter GET_SIGNAL_DOWN bound to: 2'b10 
+	Parameter WAIT_RELEASE bound to: 2'b11 
+	Parameter IS_INIT bound to: 8'b10101010 
+	Parameter IS_EXTEND bound to: 8'b11100000 
+	Parameter IS_BREAK bound to: 8'b11110000 
+INFO: [Synth 8-638] synthesizing module 'KeyboardCtrl_0' [C:/Users/ycw/final/final.runs/synth_1/.Xil/Vivado-2620-ycw-PC/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'KeyboardCtrl_0' (2#1) [C:/Users/ycw/final/final.runs/synth_1/.Xil/Vivado-2620-ycw-PC/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'OnePulse' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/OnePulse.v:1]
+INFO: [Synth 8-256] done synthesizing module 'OnePulse' (3#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/OnePulse.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/KeyboardDecoder.v:64]
+INFO: [Synth 8-256] done synthesizing module 'KeyboardDecoder' (4#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/KeyboardDecoder.v:1]
+WARNING: [Synth 8-6014] Unused sequential element key_num_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/SampleDisplay.v:115]
+INFO: [Synth 8-256] done synthesizing module 'SampleDisplay' (5#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/SampleDisplay.v:1]
+INFO: [Synth 8-638] synthesizing module 'CreateLargePulse' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:23]
+	Parameter PULSE_SIZE bound to: 25 - type: integer 
+	Parameter WAITING bound to: 1'b0 
+	Parameter COUNTING bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'CreateLargePulse' (6#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:23]
+INFO: [Synth 8-638] synthesizing module 'downcounter' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/stopwatch.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SET bound to: 1 - type: integer 
+	Parameter COUNT bound to: 2 - type: integer 
+	Parameter STOP bound to: 3 - type: integer 
+	Parameter RING bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'downcounter' (7#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/stopwatch.v:23]
+INFO: [Synth 8-638] synthesizing module 'alarm' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/alarm.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter TIMESET bound to: 1 - type: integer 
+	Parameter ALARMSET bound to: 2 - type: integer 
+	Parameter COUNT bound to: 3 - type: integer 
+	Parameter RING bound to: 4 - type: integer 
+	Parameter SNOOZE bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alarm' (8#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/alarm.v:23]
+INFO: [Synth 8-638] synthesizing module 'stopwatch' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/downcounter.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter COUNT bound to: 1 - type: integer 
+	Parameter CHECK bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'stopwatch' (9#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/downcounter.v:23]
+INFO: [Synth 8-638] synthesizing module 'bell' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/TOP.v:6]
+	Parameter BEAT_FREQ bound to: 8 - type: integer 
+	Parameter DUTY_BEST bound to: 10'b1000000000 
+INFO: [Synth 8-638] synthesizing module 'PWM_gen' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/PWM.v:10]
+INFO: [Synth 8-256] done synthesizing module 'PWM_gen' (10#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/PWM.v:10]
+INFO: [Synth 8-638] synthesizing module 'PlayerCtrl' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/PlayerCtrl.v:6]
+	Parameter BEATLEAGTH bound to: 63 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PlayerCtrl' (11#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/PlayerCtrl.v:6]
+INFO: [Synth 8-638] synthesizing module 'Music' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/Music.v:15]
+INFO: [Synth 8-226] default block is never used [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/Music.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Music' (12#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/Music.v:15]
+INFO: [Synth 8-256] done synthesizing module 'bell' (13#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/TOP.v:6]
+INFO: [Synth 8-638] synthesizing module 'LED7SEG' [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/LED7SEG.v:3]
+INFO: [Synth 8-256] done synthesizing module 'LED7SEG' (14#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/LED7SEG.v:3]
+INFO: [Synth 8-256] done synthesizing module 'TOP_level' (15#1) [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/TOP_level.v:23]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port set
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 358.188 ; gain = 113.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 358.188 ; gain = 113.234
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ycw/final/final.runs/synth_1/.Xil/Vivado-2620-ycw-PC/dcp3/KeyboardCtrl_0_in_context.xdc] for cell 'keyboard/key_de/inst'
+Finished Parsing XDC File [C:/Users/ycw/final/final.runs/synth_1/.Xil/Vivado-2620-ycw-PC/dcp3/KeyboardCtrl_0_in_context.xdc] for cell 'keyboard/key_de/inst'
+Parsing XDC File [C:/Users/ycw/final/final.srcs/constrs_1/imports/103062138_法马蝴_Final_Project/Basys3_Constraints.xdc]
+Finished Parsing XDC File [C:/Users/ycw/final/final.srcs/constrs_1/imports/103062138_法马蝴_Final_Project/Basys3_Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ycw/final/final.srcs/constrs_1/imports/103062138_法马蝴_Final_Project/Basys3_Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 670.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 670.602 ; gain = 425.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 670.602 ; gain = 425.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  C:/Users/ycw/final/final.runs/synth_1/.Xil/Vivado-2620-ycw-PC/dcp3/KeyboardCtrl_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  C:/Users/ycw/final/final.runs/synth_1/.Xil/Vivado-2620-ycw-PC/dcp3/KeyboardCtrl_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  C:/Users/ycw/final/final.runs/synth_1/.Xil/Vivado-2620-ycw-PC/dcp3/KeyboardCtrl_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  C:/Users/ycw/final/final.runs/synth_1/.Xil/Vivado-2620-ycw-PC/dcp3/KeyboardCtrl_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for keyboard/key_de/inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 670.602 ; gain = 425.648
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element num_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/clock_divisor.v:11]
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ok" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "stop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "snooze" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uphour" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "downhour" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "upminute" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "downminute" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "upsec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "downsec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+INFO: [Synth 8-5544] ROM "beep" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "curstate0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "beep" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "curstate0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "curstate0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/PWM.v:19]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/PWM.v:24]
+INFO: [Synth 8-5544] ROM "value" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DIGIT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 670.602 ; gain = 425.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 15    
+	   2 Input      5 Bit       Adders := 11    
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 11    
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   9 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   4 Input     10 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 33    
+	   3 Input      6 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 5     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 19    
+	   7 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	 256 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 15    
+	   6 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 32    
+	   4 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TOP_level 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+Module OnePulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module KeyboardDecoder 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 7     
+Module SampleDisplay 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 11    
+Module CreateLargePulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+Module downcounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 6     
+	   3 Input      6 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 9     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module alarm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 8     
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 16    
+	   7 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 6     
+Module stopwatch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 4     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+Module PWM_gen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module PlayerCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module Music 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input     15 Bit        Muxes := 1     
+	 256 Input      4 Bit        Muxes := 1     
+Module LED7SEG 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ok" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "stop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "snooze" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uphour" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "downhour" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "upminute" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "downminute" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "upsec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "downsec" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/CreateLargePulse.v:39]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/PWM.v:24]
+DSP Report: Generating DSP count_duty0, operation Mode is: A*B.
+DSP Report: operator count_duty0 is absorbed into DSP count_duty0.
+DSP Report: operator count_duty0 is absorbed into DSP count_duty0.
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/PWM.v:24]
+DSP Report: Generating DSP count_duty0, operation Mode is: A*B.
+DSP Report: operator count_duty0 is absorbed into DSP count_duty0.
+DSP Report: operator count_duty0 is absorbed into DSP count_duty0.
+WARNING: [Synth 8-6014] Unused sequential element cd/num_reg was removed.  [C:/Users/ycw/final/final.srcs/sources_1/imports/103062138_法马蝴_Final_Project/clock_divisor.v:11]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port set
+INFO: [Synth 8-3886] merging instance 'bl/playerCtrl_00/ibeat_reg[6]' (FDC) to 'bl/playerCtrl_00/ibeat_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (bl/\playerCtrl_00/ibeat_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (recordhour_reg[5]) is unused and will be removed from module stopwatch.
+WARNING: [Synth 8-3332] Sequential element (playerCtrl_00/ibeat_reg[7]) is unused and will be removed from module bell.
+WARNING: [Synth 8-3332] Sequential element (cd/num_reg[25]) is unused and will be removed from module TOP_level.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 670.602 ; gain = 425.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|PWM_gen     | A*B         | 25     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|PWM_gen     | A*B         | 25     | 11     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 690.680 ; gain = 445.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 701.824 ; gain = 456.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 732.762 ; gain = 487.809
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 732.762 ; gain = 487.809
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 732.762 ; gain = 487.809
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 732.762 ; gain = 487.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 732.762 ; gain = 487.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 732.762 ; gain = 487.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 732.762 ; gain = 487.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |KeyboardCtrl_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |KeyboardCtrl_0 |     1|
+|2     |BUFG           |     2|
+|3     |CARRY4         |   312|
+|4     |DSP48E1        |     2|
+|5     |LUT1           |    30|
+|6     |LUT2           |   817|
+|7     |LUT3           |   358|
+|8     |LUT4           |   700|
+|9     |LUT5           |   137|
+|10    |LUT6           |   388|
+|11    |MUXF7          |    70|
+|12    |MUXF8          |    34|
+|13    |FDCE           |   974|
+|14    |FDRE           |    38|
+|15    |IBUF           |     6|
+|16    |OBUF           |    30|
++------+---------------+------+
+
+Report Instance Areas: 
++------+---------------------+-------------------+------+
+|      |Instance             |Module             |Cells |
++------+---------------------+-------------------+------+
+|1     |top                  |                   |  3910|
+|2     |  SevenSeg           |LED7SEG            |    20|
+|3     |  alarmclock         |alarm              |   214|
+|4     |  bl                 |bell               |  1241|
+|5     |    music00          |Music              |     7|
+|6     |    btSpeedGen       |PWM_gen            |   132|
+|7     |    playerCtrl_00    |PlayerCtrl         |    28|
+|8     |    toneGen          |PWM_gen_9          |  1074|
+|9     |  c_pulse_downhour   |CreateLargePulse   |    68|
+|10    |  c_pulse_downminute |CreateLargePulse_0 |    68|
+|11    |  c_pulse_downsec    |CreateLargePulse_1 |    66|
+|12    |  c_pulse_ok         |CreateLargePulse_2 |    68|
+|13    |  c_pulse_set        |CreateLargePulse_3 |    68|
+|14    |  c_pulse_snooze     |CreateLargePulse_4 |    66|
+|15    |  c_pulse_stop       |CreateLargePulse_5 |    68|
+|16    |  c_pulse_uphour     |CreateLargePulse_6 |    69|
+|17    |  c_pulse_upminute   |CreateLargePulse_7 |    69|
+|18    |  c_pulse_upsec      |CreateLargePulse_8 |    68|
+|19    |  cd                 |clock_divider      |    57|
+|20    |  dr                 |downcounter        |   102|
+|21    |  keyboard           |SampleDisplay      |  1399|
+|22    |    key_de           |KeyboardDecoder    |  1389|
+|23    |      op             |OnePulse           |     3|
+|24    |  sh                 |stopwatch          |   156|
++------+---------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 732.762 ; gain = 487.809
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 732.762 ; gain = 175.395
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 732.762 ; gain = 487.809
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+78 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 732.762 ; gain = 494.891
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ycw/final/final.runs/synth_1/TOP_level.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.040 . Memory (MB): peak = 732.762 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 12 09:20:50 2018...

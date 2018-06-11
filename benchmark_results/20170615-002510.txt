@@ -1,0 +1,18 @@
+# of txns during benchmark period: 14
+MICRO: 8 ms
+MICRO: 8 ms
+MICRO: 7 ms
+MICRO: 69 ms
+MICRO: 10 ms
+MICRO: 7 ms
+MICRO: 7 ms
+MICRO: 9 ms
+MICRO: 8 ms
+MICRO: 7 ms
+MICRO: 8 ms
+MICRO: 7 ms
+MICRO: 16 ms
+MICRO: 8 ms
+
+MICRO 14 avg latency: 13 ms
+TOTAL 14 avg latency: 13 ms

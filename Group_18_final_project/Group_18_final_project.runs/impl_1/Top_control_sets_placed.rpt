@@ -1,0 +1,104 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Fri Jan 12 10:37:23 2018
+| Host         : ycw-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    38 |
+| Unused register locations in slices containing registers |   157 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              34 |           11 |
+| No           | No                    | Yes                    |             152 |           57 |
+| No           | Yes                   | No                     |             260 |           77 |
+| Yes          | No                    | No                     |               4 |            2 |
+| Yes          | No                    | Yes                    |             649 |          204 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+------------------------------------------------------------+----------------------------+------------------+----------------+
+|       Clock Signal      |                        Enable Signal                       |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-------------------------+------------------------------------------------------------+----------------------------+------------------+----------------+
+|  cd/out[1]              |                                                            |                            |                2 |              3 |
+|  clk_IBUF_BUFG          | keyboard/key_de/inst/inst/Ps2Interface_i/bits_count        | rst_IBUF                   |                2 |              4 |
+|  cd/out[0]              | SevenSeg/value[3]_i_1_n_0                                  |                            |                2 |              4 |
+|  cd/out[0]              |                                                            |                            |                1 |              4 |
+|  clk26_BUFG             | alarmclock/p_0_in                                          | bl/toneGen/AR[0]           |                1 |              4 |
+|  clk26_BUFG             | alarmclock/ahour[4]_i_1_n_0                                | bl/toneGen/AR[0]           |                4 |              5 |
+|  clk26_BUFG             | dr/hour[4]_i_1_n_0                                         | bl/toneGen/AR[0]           |                3 |              5 |
+|  clk26_BUFG             | sh/ahour[4]_i_1__0_n_0                                     | bl/toneGen/AR[0]           |                3 |              5 |
+|  clk26_BUFG             | alarmclock/hour[4]_i_1__0_n_0                              | bl/toneGen/AR[0]           |                3 |              5 |
+|  clk26_BUFG             | alarmclock/sec[5]_i_1_n_0                                  | bl/toneGen/AR[0]           |                5 |              6 |
+|  clk26_BUFG             | dr/ominute[5]_i_1_n_0                                      | bl/toneGen/AR[0]           |                4 |              6 |
+|  clk26_BUFG             | dr/osec[5]_i_1_n_0                                         | bl/toneGen/AR[0]           |                4 |              6 |
+|  clk26_BUFG             | sh/aminute[5]_i_1__0_n_0                                   | bl/toneGen/AR[0]           |                3 |              6 |
+|  clk26_BUFG             | sh/asec[5]_i_1__0_n_0                                      | bl/toneGen/AR[0]           |                2 |              6 |
+|  bl/btSpeedGen/beatFreq |                                                            | bl/toneGen/AR[0]           |                1 |              6 |
+|  clk26_BUFG             | alarmclock/aminute[5]_i_1_n_0                              | bl/toneGen/AR[0]           |                3 |              6 |
+|  clk26_BUFG             | alarmclock/asec[5]_i_1_n_0                                 | bl/toneGen/AR[0]           |                5 |              6 |
+|  clk26_BUFG             | alarmclock/minute[5]_i_1_n_0                               | bl/toneGen/AR[0]           |                5 |              6 |
+|  clk26_BUFG             |                                                            | bl/toneGen/AR[0]           |                6 |              8 |
+|  clk_IBUF_BUFG          | keyboard/key_de/inst/inst/Ps2Interface_i/rx_valid          | rst_IBUF                   |                2 |              8 |
+|  clk_IBUF_BUFG          | keyboard/key_de/inst/inst/Ps2Interface_i/rx_finish         | rst_IBUF                   |                1 |              8 |
+|  clk_IBUF_BUFG          | keyboard/key_de/inst/inst/Ps2Interface_i/frame[10]_i_1_n_0 | rst_IBUF                   |                5 |             11 |
+|  clk26_BUFG             | sh/nextrecordsec                                           | bl/toneGen/AR[0]           |                5 |             17 |
+|  clk_IBUF_BUFG          | keyboard/key_de/key[9]_i_1_n_0                             | rst_IBUF                   |                4 |             17 |
+|  clk_IBUF_BUFG          |                                                            | keyboard/counter_reg[24]_0 |                7 |             25 |
+|  clk_IBUF_BUFG          |                                                            | keyboard/counter_reg[24]_1 |                7 |             25 |
+|  clk_IBUF_BUFG          |                                                            | keyboard/counter_reg[24]_4 |                7 |             25 |
+|  clk_IBUF_BUFG          |                                                            | keyboard/counter_reg[24]_2 |                7 |             25 |
+|  clk_IBUF_BUFG          |                                                            | keyboard/counter_reg[24]_3 |                7 |             25 |
+|  clk_IBUF_BUFG          |                                                            | keyboard/counter_reg[24]_5 |                7 |             25 |
+|  clk_IBUF_BUFG          |                                                            | keyboard/counter_reg[24]_6 |                7 |             25 |
+|  clk_IBUF_BUFG          |                                                            | keyboard/counter_reg[24]_7 |                7 |             25 |
+|  clk_IBUF_BUFG          |                                                            | keyboard/counter_reg[24]_8 |                7 |             25 |
+|  clk_IBUF_BUFG          |                                                            | keyboard/counter_reg[24]   |                7 |             25 |
+|  clk_IBUF_BUFG          |                                                            |                            |                8 |             27 |
+|  clk_IBUF_BUFG          |                                                            | bl/toneGen/AR[0]           |               18 |             66 |
+|  clk_IBUF_BUFG          |                                                            | rst_IBUF                   |               39 |             82 |
+|  clk_IBUF_BUFG          | keyboard/key_de/op/E[0]                                    | rst_IBUF                   |              140 |            512 |
++-------------------------+------------------------------------------------------------+----------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 3      |                     1 |
+| 4      |                     4 |
+| 5      |                     4 |
+| 6      |                     9 |
+| 8      |                     3 |
+| 11     |                     1 |
+| 16+    |                    16 |
++--------+-----------------------+
+
+

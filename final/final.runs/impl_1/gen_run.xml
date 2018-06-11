@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1515719983">
+  <File Type="PWROPT-DRC" Name="TOP_level_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="TOP_level_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="TOP_level_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="TOP_level_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="TOP_level.tcl"/>
+  <File Type="OPT-HWDEF" Name="TOP_level.hwdef"/>
+  <File Type="RDI-RDI" Name="TOP_level.vdi"/>
+  <File Type="OPT-DCP" Name="TOP_level_opt.dcp"/>
+  <File Type="OPT-DRC" Name="TOP_level_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="TOP_level_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="TOP_level_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="TOP_level_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="TOP_level_placed.dcp"/>
+  <File Type="PLACE-IO" Name="TOP_level_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="TOP_level_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TOP_level_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TOP_level_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TOP_level_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="TOP_level_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TOP_level_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="TOP_level_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TOP_level_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="TOP_level_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="TOP_level_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="TOP_level_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="TOP_level_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TOP_level_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="TOP_level_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TOP_level_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="TOP_level_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TOP_level_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="TOP_level.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="TOP_level_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="TOP_level.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TOP_level_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="TOP_level.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TOP_level_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="TOP_level.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TOP_level_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="TOP_level_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="TOP_level_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="TOP_level_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TOP_level_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TOP_level_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TOP_level_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TOP_level_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="TOP_level_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="TOP_level_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TOP_level_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TOP_level_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TOP_level_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TOP_level_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TOP_level_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="TOP_level.bit"/>
+  <File Type="BITSTR-RBT" Name="TOP_level.rbt"/>
+  <File Type="BITSTR-NKY" Name="TOP_level.nky"/>
+  <File Type="BITSTR-BMM" Name="TOP_level_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="TOP_level.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="TOP_level.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/CreateLargePulse.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/CreateLargePulse.v"/>
+        <Attr Name="ImportTime" Val="1447722700"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/KeyboardDecoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/KeyboardDecoder.v"/>
+        <Attr Name="ImportTime" Val="1447692686"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/LED7SEG.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/LED7SEG.v"/>
+        <Attr Name="ImportTime" Val="1451934044"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/Music.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/Music.v"/>
+        <Attr Name="ImportTime" Val="1448296028"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/OnePulse.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/OnePulse.v"/>
+        <Attr Name="ImportTime" Val="1447691716"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/PWM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/PWM.v"/>
+        <Attr Name="ImportTime" Val="1448125852"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/PlayerCtrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/PlayerCtrl.v"/>
+        <Attr Name="ImportTime" Val="1448296005"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/SampleDisplay.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/SampleDisplay.v"/>
+        <Attr Name="ImportTime" Val="1451925603"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/TOP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/TOP.v"/>
+        <Attr Name="ImportTime" Val="1451984985"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/alarm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/alarm.v"/>
+        <Attr Name="ImportTime" Val="1452101057"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/clock_divisor.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/clock_divisor.v"/>
+        <Attr Name="ImportTime" Val="1451991028"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/downcounter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/downcounter.v"/>
+        <Attr Name="ImportTime" Val="1452168416"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/stopwatch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/stopwatch.v"/>
+        <Attr Name="ImportTime" Val="1452156389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/103062138_楊鎮維_Final_Project/TOP_level.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/TOP_level.v"/>
+        <Attr Name="ImportTime" Val="1452160658"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TOP_level"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/103062138_楊鎮維_Final_Project/Basys3_Constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/103062138_楊鎮維_Final_Project/Basys3_Constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1452159759"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="KeyboardCtrl_0"/>
+</GenRun>

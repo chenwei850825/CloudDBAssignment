@@ -1,0 +1,50 @@
+# of txns during benchmark period: 46
+MICRO: 16 ms
+MICRO: 13 ms
+MICRO: 13 ms
+MICRO: 11 ms
+MICRO: 10 ms
+MICRO: 19 ms
+MICRO: 22 ms
+MICRO: 30 ms
+MICRO: 11 ms
+MICRO: 10 ms
+MICRO: 8 ms
+MICRO: 11 ms
+MICRO: 13 ms
+MICRO: 25 ms
+MICRO: 14 ms
+MICRO: 30 ms
+MICRO: 14 ms
+MICRO: 10 ms
+MICRO: 9 ms
+MICRO: 23 ms
+MICRO: 10 ms
+MICRO: 10 ms
+MICRO: 8 ms
+MICRO: 8 ms
+MICRO: 8 ms
+MICRO: 9 ms
+MICRO: 8 ms
+MICRO: 15 ms
+MICRO: 16 ms
+MICRO: 11 ms
+MICRO: 10 ms
+MICRO: 10 ms
+MICRO: 9 ms
+MICRO: 9 ms
+MICRO: 10 ms
+MICRO: 12 ms
+MICRO: 38 ms
+MICRO: 10 ms
+MICRO: 9 ms
+MICRO: 10 ms
+MICRO: 9 ms
+MICRO: 10 ms
+MICRO: 9 ms
+MICRO: 22 ms
+MICRO: 9 ms
+MICRO: 10 ms
+
+MICRO 46 avg latency: 13 ms
+TOTAL 46 avg latency: 14 ms

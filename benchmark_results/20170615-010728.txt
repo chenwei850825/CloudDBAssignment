@@ -1,0 +1,6 @@
+# of txns during benchmark period: 2
+MICRO: 41 ms
+MICRO: 31 ms
+
+MICRO 2 avg latency: 36 ms
+TOTAL 2 avg latency: 36 ms
